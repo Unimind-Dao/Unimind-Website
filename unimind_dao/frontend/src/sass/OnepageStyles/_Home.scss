@@ -1,0 +1,72 @@
+.home_container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(255, 255, 222);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 222, 1) 0%,
+    rgba(225, 242, 242, 1) 50%,
+    rgba(242, 224, 247, 1) 100%
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  &__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    width: 60rem;
+  }
+
+  &__title {
+    font-family: "Lovelo";
+    letter-spacing: 4px;
+    font-size: 8rem;
+    color: rgba($base-contrast-color, 0.9);
+
+    @include respond(phone) {
+      font-size: 5.5rem;
+    }
+  }
+
+  &__description {
+    font-size: 2.2rem;
+    margin-bottom: 13rem;
+    line-height: 1.5em;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 1.4rem 3.7rem;
+    margin: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    color: rgba($base-contrast-color, 0.9);
+    font-weight: 700;
+    border-radius: 60px;
+    box-shadow: 0px 3px 15px rgba(73, 73, 73, 0.5);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include respond(tab-port) {
+      font-size: 1.3rem;
+      padding: 1.5rem 5rem;
+    }
+  }
+}

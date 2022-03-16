@@ -1,0 +1,147 @@
+.blog {
+  &__container {
+    min-height: 100vh;
+  }
+
+  &__post {
+    color: $base-text-color;
+    font-family: "Poppins";
+    height: 15rem;
+
+    &__wrapper {
+      width: 100rem;
+      max-width: 90%;
+      min-height: 20rem;
+      height: auto;
+      hr {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+    &__tile {
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 25rem 1fr;
+      height: 20rem;
+      box-shadow: 0px 4px 10px rgba(#d8d8d8, 1);
+
+      @include respond(phone) {
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+    }
+
+    &__image {
+      overflow: hidden;
+      width: 100%;
+
+      img {
+        width: auto;
+        height: 100%;
+        position: relative;
+
+        @include respond(phone) {
+          width: 100%;
+        }
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      margin-left: 2rem;
+      padding-right: 1rem;
+
+      @include respond(phone) {
+        margin-left: 0;
+      }
+    }
+
+    &__category {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      color: #3498db;
+
+      @include respond(phone) {
+        margin-top: 1rem;
+      }
+    }
+
+    &__title {
+      font-size: 1.9rem;
+      font-weight: 700;
+      margin-bottom: 1.3rem;
+    }
+
+    &__text {
+      display: flex;
+      font-weight: 500;
+      font-size: 1.3rem;
+      line-height: 1.5;
+    }
+
+    &__row {
+      margin-top: 0.5rem;
+      width: 100%;
+      text-align: left;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &__date {
+      display: flex;
+      font-weight: 600;
+      font-size: 1.2rem;
+      opacity: 0.5;
+    }
+
+    &__author {
+      display: flex;
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-left: 0.5rem;
+      opacity: 0.5;
+    }
+
+    &__link {
+      font-family: "Poppins";
+      text-decoration: none;
+      width: 5rem;
+      color: $base-text-color;
+      margin-top: auto;
+      transition: 0.1s ease;
+      font-weight: 600;
+      font-size: 1.2rem;
+      z-index: 1;
+      transform: 0.2s ease;
+
+      @include respond(phone) {
+        margin-top: 2rem;
+      }
+
+      &:hover {
+        position: relative;
+        top: 0.2rem;
+      }
+
+      &:after {
+        content: "";
+
+        display: block;
+        height: 1rem;
+        width: auto;
+        position: relative;
+        top: -1rem;
+        left: 0.2rem;
+        z-index: -1;
+        background: $base-background;
+        background-position: right;
+        background-size: 150%;
+      }
+    }
+  }
+}

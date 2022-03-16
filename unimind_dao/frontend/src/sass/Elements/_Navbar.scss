@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700");
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  // font-family: $nav-font;
+  font-family: "Poppins";
+  background-color: $base-contrast-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.5px 1px 0 rgba(32, 32, 32, 0.1);
+  height: 7rem;
+  padding: 0.7rem 4rem;
+  z-index: 100000;
+  // font-family: Lovelo;
+  // font-family: "Poppins", sans-serif;
+
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 9rem;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    transform: translateY(1px);
+
+    @include respond(phone) {
+      padding: 0;
+    }
+
+    &__item {
+      margin-right: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+  }
+
+  &__media {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      text-decoration: none;
+      padding: 5.5px;
+      margin-left: 2rem;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.1s;
+      border-radius: 25px;
+      font-size: 1.5rem;
+
+      @include respond(tab-port) {
+        font-size: 2.5rem;
+      }
+    }
+
+    @include respond(tab-port) {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+    &__logo {
+      font-family: "Lovelo";
+      cursor: pointer;
+      font-size: 3rem;
+      margin-right: 4rem;
+      
+      @include respond(phone) {
+        transform: translateY(2px);
+      }
+
+      &:hover {
+        color: white !important;
+      }
+    }
+
+    &:hover {
+      color: #777;
+    }
+  }
+
+  &__button {
+    display: none;
+    z-index: 1000000;
+
+    @include respond(tab-port) {
+      display: block;
+      height: auto;
+      width: 3.5rem;
+      height: auto;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
+      // &:hover {
+      //   height: 70%;
+      //   margin: 15% 0;
+      // }
+
+      &__component {
+        display: none;
+        padding: 0.2rem;
+        width: 100%;
+        background-color: white;
+        transition: all 0.2s ease;
+
+        &:nth-child(1) {
+          margin-bottom: 0.8rem;
+        }
+
+        &:nth-child(3) {
+          margin-top: 0.8rem;
+        }
+
+        &--active {
+          &:nth-child(1) {
+            transform: translateY(1.2rem) rotate(-45deg);
+            -ms-transform: translateY(1.2rem) rotate(-45deg);
+            -o-transform: translateY(1.2rem) rotate(-45deg);
+            -webkit-transform: translateY(1.2rem) rotate(-45deg);
+            // -ms-transform: translateY(13px) rotate(45deg);
+            // -o-transform: translateY(13px) rotate(45deg);
+            // transform: translateY(13px) rotate(45deg);
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:nth-child(3) {
+            transform: translateY(-1.2rem) rotate(45deg);
+            -ms-transform: translateY(-1.2rem) rotate(45deg);
+            -o-transform: translateY(-1.2rem) rotate(45deg);
+            -webkit-transform: translateY(-1.2rem) rotate(45deg);
+            // -ms-transform: translateY(-13px) rotate(-45deg);
+            // -o-transform: translateY(-13px) rotate(-45deg);
+            // transform: translateY(-13px) rotate(-45deg)
+          }
+        }
+
+        @include respond(tab-port) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none !important;
+}

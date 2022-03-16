@@ -1,0 +1,26 @@
+{
+    "nav_home": "Home",
+    "nav_mission": "Misja",
+    "nav_team":"Zespół",
+    "nav_news":"Nowości",
+    "home_welcome_message" : "Najlepsza społeczność Web3 w Polsce",
+    "home_CTA": "Więcej",
+    "mission_title": "MISJA",
+    "mission_bold_text": "UNIMIND DAO istnieje, aby ułatwić i przyspieszyć karierę w świecie Web3 dla każdego.",
+    "mission_text": "  Osiągniemy to poprzez udostępnianie każdemu możliwości pracy w Web3, wykorzystując inkluzywne metody organizacyjne DAO, a także poprzez tworzenie materiałów edukacyjnych, które mają uczyć ludzi myśleć samodzielnie. Dążymy do tego, aby UNIMIND był oczywistym wyborem przy starcie kariery jako twórca lub freelancer w świecie Web3, ponieważ oferuje najlepsze warunki i wsparcie w Polsce.",
+    "mission_discord_button_text_first": "Dołącz do naszego metaversu! ",
+
+    "mission_values": "Wartości",
+    "mission_education_title": "Edukacja",
+    "mission_education_text": " - uczymy tylko faktów, aby każdy mógł wyrobić własną opinię. Stawiamy granicę pomiędzy jednymi, a drugimi.",
+    "mission_transparent_title" : "Transparencja",
+    "mission_transparent_text": "- nasze rozwiązania techniczne udostępniamy w formule open-source, dokumentujemy i dzielimy się ze światem naszymi postępami, a większość konwersacji prowadzimy publicznie.",
+    "mission_responsibility_title": "Odpowiedzialność",
+    "mission_responsibility_text" : " - pracujemy w samoorganizujący się sposób, gdzie każdy jest w pełni odpowiedzialny za swoje inicjatywy, a każdy pomysł może być zrealizowany wtedy i tylko wtedy, jeśli bierze się za niego pełną odpowiedzialność.",
+    "mission_integration_title": "Integracja",
+    "mission_integration_text" : "- każdy zainteresowany może wesprzeć UNIMIND i czerpać z tego korzyści.",
+    "team_title": "NASZ ZESPÓŁ",
+    "footer_partners": "Partnerzy",
+    "footer_contact": "Kontakt",
+    "news_title": "Aktualności"
+}
