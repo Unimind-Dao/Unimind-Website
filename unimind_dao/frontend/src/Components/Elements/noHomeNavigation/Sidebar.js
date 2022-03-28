@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
-import { FaBell } from "react-icons/fa";
+import LngBtn from "../LngBtn/LngBtn";
 
 const Sidebar = ({ isOpen, closeSidebar }) => {
   const styles = isOpen ? "sidebar sidebar--open" : "sidebar sidebar--closed";
@@ -41,6 +41,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
             </li>
           </a>
         </ul>
+        <LngBtn LngBtnStyles="lng lng__container lng__container--sidebar" />
       </nav>
     </Fragment>
   );

@@ -54,11 +54,11 @@ const Navbar = ({ isOpen, toggleSidebar }) => {
               {t("nav_team")}
             </Link>
           </li>
-          {/* <li className="navbar__list__item">
+          <li className="navbar__list__item">
             <NavLink className="navbar__link" to="/news">
               {t("nav_news")}
             </NavLink>
-          </li> */}
+          </li>
           <li className="navbar__list__item">
             <a
               target="_blank"
