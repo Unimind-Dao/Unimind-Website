@@ -79,7 +79,7 @@ const Navbar = ({ isOpen, toggleSidebar }) => {
             <FaYoutube />
           </a>
         </div>
-        <LngBtn />
+        <LngBtn LngBtnStyles="lng lng__container" />
         <button className="navbar__button" onClick={toggleSidebar}>
           <div className={`${hamburgerStyle}`}></div>
           <div className={`${hamburgerStyle}`}></div>
