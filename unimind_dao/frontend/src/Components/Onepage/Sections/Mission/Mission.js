@@ -1,8 +1,7 @@
 import React from "react";
 import Title from "../../../Elements/Title/Title";
 import { IoIosSchool } from "react-icons/io";
-import { HiDocumentSearch } from "react-icons/hi";
-import { HiUserGroup } from "react-icons/hi";
+import { HiDocumentSearch, HiUserGroup } from 'react-icons/hi';
 import { MdOutlineEmojiPeople } from "react-icons/md";
 import EmptyPage from "../../../Elements/EmptyPage/EmptyPage";
 import { useTranslation } from "react-i18next";

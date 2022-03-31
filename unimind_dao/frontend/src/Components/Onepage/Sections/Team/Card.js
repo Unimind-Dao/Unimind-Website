@@ -6,12 +6,6 @@ import { FaDiscord } from "react-icons/fa";
 
 
 const Card = (props) => {
-  useEffect(() => {
-
-    // setInterval(() => {
-    //   fetchTeamData();
-    // }, 360000);
-  }, []);
 
   return (
     <div className="team__cards__item">
