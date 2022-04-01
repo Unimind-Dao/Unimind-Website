@@ -3,17 +3,17 @@
 @import "base/base";
 @import "base/typography";
 
-@import "BlogStyles/Blog";
-@import "BlogStyles/BlogDetail";
-@import "BlogStyles/Category";
-@import "Elements/Navbar";
-@import "Elements/Sidebar";
-@import "Elements/Title";
-@import "Elements/Footer";
-@import "Elements/Loading";
-@import "Elements/EmptyPage";
-@import "Elements/LngBtn";
+@import "../Components/Blog/Blog/Blog";
+@import "../Components/Blog/BlogDetail/BlogDetail";
+@import "../Components/Blog/Category/Category";
+@import "../Components/Elements/Navigation/Navbar";
+@import "../Components/Elements/Navigation/Sidebar";
+@import "../Components/Elements/Title/Title";
+@import "../Components/Elements/Footer/Footer";
+@import "../Components/Elements/Loading";
+@import "../Components/Elements/EmptyPage/EmptyPage";
+@import "../Components/Elements/LngBtn/LngBtn";
 
-@import "OnepageStyles/Home";
-@import "OnepageStyles/Mission";
-@import "OnepageStyles/Team";
+@import "../Components/Onepage/Sections/Home/Home";
+@import "../Components/Onepage/Sections/Mission/Mission";
+@import "../Components/Onepage/Sections/Team/Team";
