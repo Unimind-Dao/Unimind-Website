@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import EmptyPage from "../../Elements/EmptyPage/EmptyPage";
 import { useTranslation } from "react-i18next";
-import BlogPost from "./BlogCard";
+import BlogCard from "./BlogCard";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
@@ -44,7 +44,7 @@ const Blog = () => {
   const posts = blogs.map((blogPost) => {
     return (
       <>
-        <BlogPost
+        <BlogCard
           key={blogPost.title}
           title={blogPost.title}
           thumbnail={blogPost.thumbnail}

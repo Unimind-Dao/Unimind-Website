@@ -5,7 +5,7 @@ import LoadingScreen from "./Components/Elements/Loading";
 import ScrollToTop from "./Components/Utilities/ScroolToTop";
 //blog
 import Blog from "./Components/Blog/Blog/Blog";
-import BlogDetail from "./Components/Blog/Blog/BlogDetail/BlogDetail";
+import BlogPost from "./Components/Blog/Blog/BlogCard";
 // views
 import Landing from "./Components/Onepage/Landing";
 // layouts
@@ -55,10 +55,9 @@ const App = () => {
                 component={Blog}
               />
               <AppRoute
-                exact
                 path="/news/:id"
                 layout={BlogLayout}
-                component={BlogDetail}
+                component={BlogPost}
               />
             </ScrollToTop>
           </Router>
