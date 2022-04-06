@@ -19,7 +19,7 @@ const BlogPost = (props) => (
                 </div>
               </div>
               <div className="blog__post__text">{props.excerpt}</div>
-            <Link to={`/news/${props.slug}`} className="blog__post__link">
+            <Link exact to={`/news/${props.slug}`} className="blog__post__link">
                 WIĘCEJ
             </Link>
         </div>
