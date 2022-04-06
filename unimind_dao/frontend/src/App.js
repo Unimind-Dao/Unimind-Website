@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../src/sass/main.scss";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import LoadingScreen from "./Components/Elements/Loading";
 import ScrollToTop from "./Components/Utilities/ScroolToTop";

@@ -7,7 +7,6 @@ import EmptyPage from "../../Elements/EmptyPage/EmptyPage";
 import { useTranslation } from "react-i18next";
 import BlogPost from "./BlogCard";
 
-
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   const { t } = useTranslation();
@@ -30,9 +29,9 @@ const Blog = () => {
     const fetchBlogs = async () => {
       try {
         const res = await axios.get(
-					// `${process.env.REACT_APP_API_URL}/api/blog/`
-				'http://localhost:8000/api/blog/'
-				);
+          // `${process.env.REACT_APP_API_URL}/api/blog/`
+          "http://165.232.130.17/api/blog/"
+        );
         setBlogs(res.data);
       } catch (err) {}
     };
@@ -40,7 +39,7 @@ const Blog = () => {
     fetchBlogs();
   }, []);
 
-  console.log('blog', blogs)
+  console.log("blog", blogs);
 
   const posts = blogs.map((blogPost) => {
     return (
