@@ -4,12 +4,13 @@ import krzysztovImage from './card_photos/krzysztov.png';
 import gagareenImage from './card_photos/Gagareen.png';
 import wikistImage from './card_photos/Wikist.png';
 import bartImage from './card_photos/Bart.png';
+import mackj99  from './card_photos/mackj99.png'
 
 const DataTeam = [
 	{
 		name: 'Piotr Saczuk',
 		nick: 'Saczyy',
-		role: 'FOUNDER',
+		role: 'RESEARCHER/BUISNESS DEVELOPMENT',
 		image: saczyImage ,
 		twitter: 'https://twitter.com/Piotr_Saczuk',
 		linkedin: 'https://www.linkedin.com/in/piotr-saczuk-0347521bb/',
@@ -18,7 +19,7 @@ const DataTeam = [
 	{
 		name: 'Krzysztof Radej',
 		nick: 'Krzysztov',
-		role: 'FOUNDER & FRONTEND-DEV',
+		role: 'FRONTEND-DEV',
 		image:  krzysztovImage ,
 		twitter: 'https://twitter.com/Krzysztovvv',
 		discord: 'https://discordapp.com/users/327471296592216066',
@@ -26,7 +27,7 @@ const DataTeam = [
 	{
 		name: 'Mateusz Radej',
 		nick: 'Gagareen',
-		role: 'FOUNDER & Backend-dev',
+		role: 'Backend-dev',
 		image:  gagareenImage ,
 		twitter: 'https://twitter.com/Mateusz66177940',
 		linkedin: 'https://www.linkedin.com/in/,mateusz-radej-53945b184/',
@@ -35,7 +36,7 @@ const DataTeam = [
 	{
 		name: 'Wiktor Grzyb',
 		nick: 'Wikist',
-		role: 'FOUNDER & DAO guardian',
+		role: 'DAO guardian',
 		image:  wikistImage ,
 		twitter: 'https://twitter.com/WiktorGrzyb',
 		linkedin: 'https://www.linkedin.com/in/wiktorgrzyb/',
@@ -51,9 +52,9 @@ const DataTeam = [
 	},
 	{
 		name: 'Maciej Janicki',
-		nick: 'mack999',
+		nick: 'mackj999',
 		role: 'FRONTEND-DEV',
-		image: 'meh',
+		image: mackj99 ,
 		linkedin: '',
 		discord: '',
 	},

@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__copy">
-          Unimind 2022 &copy; ~ Krzysztov, Gagarin
+          Unimind 2022 &copy; ~ Krzysztov, Gagarin, mack999
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
 //language translation
 import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';

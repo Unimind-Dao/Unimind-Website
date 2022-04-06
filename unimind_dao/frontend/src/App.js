@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../src/sass/main.scss";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import LoadingScreen from "./Components/Elements/Loading";
 import ScrollToTop from "./Components/Utilities/ScroolToTop";
 //blog
 import Blog from "./Components/Blog/Blog/Blog";
-import BlogDetail from "./Components/Blog/BlogDetail/BlogDetail";
+import BlogPost from "./Components/Blog/Blog/BlogCard";
 // views
 import Landing from "./Components/Onepage/Landing";
 // layouts
@@ -58,7 +59,7 @@ const App = () => {
                 exact
                 path="/news/:id"
                 layout={LandingLayout}
-                component={BlogDetail}
+                component={BlogPost}
               />
             </ScrollToTop>
           </Router>
