@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import AOS from 'aos';
+import ScrollToTop from '../../../Utilities/ScroolToTop';
 
 const BlogDetail = (props) => {
 	const [blog, setBlog] = useState({});
 
 	useEffect(() => {
+		AOS.init({ once: true, duration: 700 });
 		const slug = props.match.params.id;
-
 		const fetchData = async () => {
 			try {
 				const res = await axios.get(`http://165.232.130.17/api/blog/${slug}`);
@@ -31,25 +33,28 @@ const BlogDetail = (props) => {
 	return (
 		<>
 			<section className='BlogDetail'>
-				<Link to='/news' className='font-weight-bold BlogDetail__back'>
-					Back to Blogs
-				</Link>
-				<div className='container mt-3'>
+				<div className='BlogDetail__backContainer'>
+					<Link to='/news' className='font-weight-bold BlogDetail__back'>
+						Back to Blogs
+					</Link>
+				</div>
+				<div className='container mt-3 BlogDetail__margin'>
 					<div className='BlogDetail__head'>
-						<p className='display-2 BlogDetail__title'>
-							{/* {blog.title} */}
-							<p>
-								Sint proident eu eu ipsum commodo adipisicing non nulla nulla
-							</p>
-						</p>
+						<div className='display-2 BlogDetail__title'>
+							<h1 className='BlogDetail__titleBlog'>
+								Sint proident eu eu ipsum commodo adipisicing
+							</h1>
+						</div>
 						<div className='BlogDetail__time'>
 							<p>
 								{blog.month}/{blog.day}
 							</p>
 						</div>
 						<div className='BlogDetail__boxTimeCategory'>
-							<div className='BlogDetail__category'>
-								<p>{capitalizeFirstLetter(blog.category)}</p>
+							<div>
+								<p className='BlogDetail__category'>
+									{capitalizeFirstLetter(blog.category)}
+								</p>
 							</div>
 						</div>
 						<hr />
@@ -57,12 +62,11 @@ const BlogDetail = (props) => {
 					<div className='BlogDetail__photo'>
 						<img
 							className='BlogDetail__img'
-							width='736px'
 							alt='thumbnail'
 							src={blog.thumbnail}
 						></img>
 					</div>
-					<div>
+					<div className='BlogDetail__text'>
 						<p>
 							Ipsum anim est ut eiusmod est esse ea labore mollit pariatur ipsum
 							fugiat. Excepteur mollit magna dolor deserunt dolore non magna
