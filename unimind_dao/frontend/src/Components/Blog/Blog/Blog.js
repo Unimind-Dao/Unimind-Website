@@ -30,7 +30,7 @@ const Blog = () => {
       try {
         const res = await axios.get(
           // `${process.env.REACT_APP_API_URL}/api/blog/`
-          "http://165.232.130.17/api/blog/"
+          "https://www.unimind.website/api/blog/"
         );
         setBlogs(res.data);
       } catch (err) {}
@@ -95,12 +95,14 @@ const Blog = () => {
         </div>
       </div> */
     <>
+    
       <section className="blog__container" data-aos="fade-in">
-        <EmptyPage>
+      <EmptyPage>
           <Title>{t("news_title")}</Title>
           <section className="blog__post__wrapper">{posts}</section>
-        </EmptyPage>
+          </EmptyPage>
       </section>
+      
     </>
   );
 };

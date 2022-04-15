@@ -12,7 +12,7 @@ const BlogDetail = (props) => {
 		const slug = props.match.params.id;
 		const fetchData = async () => {
 			try {
-				const res = await axios.get(`http://165.232.130.17/api/blog/${slug}`);
+				const res = await axios.get(`https://www.unimind.website/api/blog/${slug}`);
 				setBlog(res.data);
 			} catch (err) {}
 		};
