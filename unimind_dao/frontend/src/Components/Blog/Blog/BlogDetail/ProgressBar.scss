@@ -1,0 +1,15 @@
+.Bar {
+	&__Progress {
+		margin-top: 70px;
+		position: fixed;
+		height: 20px;
+		border-radius: 0px 2px 0px 0px;
+        
+		background: linear-gradient(
+		90deg,
+		rgba(255, 255, 222, 1) 0%,
+		rgba(225, 242, 242, 1) 50%,
+		rgba(242, 224, 247, 1) 100%
+		);
+	}
+}
