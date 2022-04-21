@@ -75,7 +75,8 @@ const BlogDetail = (props) => {
 						className='BlogDetail__text'
 						dangerouslySetInnerHTML={createBlog()}
 					/>
-					{/* <div className='BlogDetail__text'>{blog.content} </div> */}
+					{/* <div className='BlogDetail__text'>
+					</div> */}
 					<p className='lead mb-5'></p>
 				</div>
 			</section>
